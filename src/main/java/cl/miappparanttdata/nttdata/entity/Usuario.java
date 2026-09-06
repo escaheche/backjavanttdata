@@ -27,7 +27,6 @@ public class Usuario {
     @Column(name = "correo_electronico", nullable = false, unique = true, length = 150)
     private String correoElectronico;
 
-    // En BD nttdata la columna es `contrasena` sin ñ (utf8mb4). En alkewallet era `contraseña` con ñ.
     @JsonIgnore
     @Column(name = "contrasena", nullable = false, length = 255)
     private String contrasena;

@@ -20,7 +20,7 @@ public class UsuarioController {
 
     /**
      * GET http://localhost:8080/api/usuarios
-     * Retorna todos los usuarios (datos de personas) desde la tabla `usuario` de AlkeWallet.
+     * Retorna todos los usuarios (datos de personas) desde la tabla `usuario` de nttdata.
      * Ideal para probar en Postman.
      */
     @GetMapping
@@ -47,6 +47,6 @@ public class UsuarioController {
      */
     @GetMapping("/health")
     public ResponseEntity<String> health() {
-        return ResponseEntity.ok("API AlkeWallet OK - conexion a alkewallet.usuario activa");
+        return ResponseEntity.ok("API NTTDATA OK - conexion a nttdata.usuario activa");
     }
 }

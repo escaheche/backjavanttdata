@@ -38,7 +38,7 @@ BACKNTTDA/
 
 ## Base de Datos
 
-### Creación BD nueva `nttdata` (no usa `alkewallet` existente)
+### Creación BD `nttdata`
 
 BD creada local en MySQL Workbench `Local instance MySQL80` (`127.0.0.1:3306`).
 
@@ -83,7 +83,7 @@ INSERT INTO usuario (nombre, correo_electronico, contrasena, saldo) VALUES
 ('Maria Gonzalez','maria@nttdata.cl','***',95000);
 ```
 
-> Se usa `contrasena` sin `ñ` para evitar problemas de encoding (`utf8mb4`). Si migras desde `alkewallet` donde la columna es `contraseña`, renombra o ajusta `@Column(name="contrasena")`.
+> Se usa `contrasena` sin `ñ` para evitar problemas de encoding (`utf8mb4`).
 
 ## Configuración — Sin exponer credenciales
 
